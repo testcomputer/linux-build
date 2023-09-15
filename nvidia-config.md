@@ -11,6 +11,7 @@ Prereqs.
       sudo reboot
 
 Verifying the packages are correct
+
       nano http://kali.org/kali kali-rolling main contrib non-free free-firmware
      
 
