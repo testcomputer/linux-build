@@ -1,4 +1,4 @@
-      nano http://kali.org/kali kali-rolling main contrib non-free free-firmware
+Prereqs.
 
       grep "contrib non-free" /etc/apt/sources.list
       deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
@@ -9,6 +9,10 @@
       sudo apt -y full-upgrade -y
 
       sudo reboot
+
+Verifying the packages are correct
+      nano http://kali.org/kali kali-rolling main contrib non-free free-firmware
+     
 
       ┌──(root㉿testcomputer)-[~]
       └─# lspci | grep -i vga
