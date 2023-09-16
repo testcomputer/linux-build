@@ -45,6 +45,9 @@ Next, we'll install gufw, which provides a graphical interface for ufw:
 
 Once installed, you can launch gufw from your system's application menu. The interface allows you to easily add, modify, and delete rules.
 
+![image](https://github.com/testcomputer/linux-build/assets/104815254/644a92a6-b4a5-4902-88a6-87c136352a19)
+
+
 ## Step 3: Verifying Installation
 
 You can verify that both ufw and gufw are installed by running the following commands:
