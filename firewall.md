@@ -42,6 +42,8 @@ You can verify that both ufw and gufw are installed by running the following com
 
 Now that we have ufw and gufw installed, let's configure some basic firewall rules using the graphical interface provided by gufw:
 
+![image](https://github.com/testcomputer/rando-linux-build/assets/104815254/2c07be71-acca-47bf-9900-143d5e1cb620)
+
 Open gufw from your system's applications menu.
     Click the "Status" switch in the top-right corner to enable the firewall.
     Navigate to the "Rules" tab.
