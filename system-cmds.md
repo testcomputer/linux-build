@@ -42,3 +42,15 @@ You can verify that the service is disabled and not running by using the followi
       systemctl is-enabled service-name
 
 It should return disabled if the service is successfully disabled.
+
+
+
+            
+            ldconfig -p | grep libpango-1.0.so.0
+ldconfig is a command used to update the shared library cache on a Linux system. It ensures that the system can locate and load shared libraries efficiently. When you install or update libraries, ldconfig is typically run to update the cache.
+    
+The -p flag is used with ldconfig to display a list of all the shared libraries in the cache. This list includes information about the libraries, such as their paths.
+
+The | (pipe) symbol is a way to send the output of one command as input to another command. In this case, it takes the output of ldconfig -p and passes it as input to the grep command.
+
+    grep is a text-searching tool that allows you to search for patterns in text. In this context, it's being used to search for lines that contain the text "libpango-1.0.so.0" in the output of ldconfig -p.
