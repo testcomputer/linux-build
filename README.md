@@ -4,15 +4,19 @@ Welcome to our high-performance Debian Linux server build tailored for web devel
 
 ## Features
 
-- **Operating System:** Kali Linux
-- **CPU:** AMD Threadripper 24-core
-- **GPU:** NVIDIA GeForce RTX 3070
-- **RAM:** 128GB DDR4
-- **Storage:** Unknown
+- **Operating System:** [Kali Linux](https://www.kali.org/)
+- **CPU:** [AMD Threadripper 24-core CPU](https://www.amd.com/en/products/ryzen-threadripper), a true marvel in the world of processing power that propels your server to new heights! 🚀
+- **GPU:** [NVIDIA GeForce RTX 3070](https://www.nvidia.com/en-gb/geforce/graphics-cards/)
+- **RAM:** [128GB of DDR4 RAM](https://www.crucial.com/memory/ddr4) you're entering a realm where more is not just better.
+- **Storage:** 
+
 
 ## Purpose
 
-Purpose
+- Driver Installation: Enjoy the convenience of accessing the very latest drivers directly from the official sources of AMD and NVIDIA.
+- Library Installation: Whether your heart beats for web development or network security, we've got you covered with an exhaustive collection of essential libraries.
+- Configuration: Our comprehensive guides take you by the hand and expertly guide you through the process of setting up everything, from web servers like Apache and Nginx to deploying potent network security tools such as Metasploit.
+- Firewall Settings: Secure your server with consummate ease using our user-friendly ufw (Uncomplicated Firewall) setup, ensuring that your server remains an impenetrable bastion.
 
 This server is designed to be your go-to platform for web development and network security tasks. Here's what you can do with this setup:
 Web Development:
@@ -47,7 +51,7 @@ Detailed Walk-throughs
 
 4. Firewall Settings:
 
-    Use ufw (Uncomplicated Firewall) to set up basic firewall rules.
+    Use [ufw (Uncomplicated Firewall)](https://help.ubuntu.com/community/UFW) to set up basic firewall rules.
     Allow ports for SSH, HTTP, HTTPS, and any other services you're running.
     Regularly review and update your firewall rules to ensure maximum security.
 
