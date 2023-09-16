@@ -1,6 +1,6 @@
 # Debian Linux Server Build for Web Development and Network Security
 
-![image](https://github.com/testcomputer/linux-build/assets/104815254/421514bc-c5d3-4160-b6d0-9efcb761e311)
+![image](https://github.com/testcomputer/linux-build/assets/104815254/a7ae6c43-3674-412d-a457-d823200a3556)
 
 
 Welcome to our high-performance Debian Linux server build tailored for web development and network security enthusiasts. This server is powered by cutting-edge hardware, including the AMD Threadripper 24-core CPU, NVIDIA 3070 GPU, and a whopping 128GB of RAM. Whether you're a seasoned professional or just getting started, this server setup has you covered.
