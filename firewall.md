@@ -20,7 +20,22 @@ To get started, we'll first install ufw:
 
 ![image](https://github.com/testcomputer/rando-linux-build/assets/104815254/230cb6d5-a4ab-429f-97b0-4eba109b1ecd)
 
+To enable ufw:
+
+        sudo ufw enable
+
+3. Basic ufw Commands
+
+Allow SSH (port 22):
+
+        sudo ufw allow ssh
+
+Deny HTTP (port 80):
+
+        sudo ufw deny http
+
 ## Step 2: Installing gufw (GUI for ufw)
+
 
 Next, we'll install gufw, which provides a graphical interface for ufw:
 
@@ -28,6 +43,7 @@ Next, we'll install gufw, which provides a graphical interface for ufw:
 
 ![image](https://github.com/testcomputer/rando-linux-build/assets/104815254/50d6aa2a-a12a-4754-8632-4740de66e199)
 
+Once installed, you can launch gufw from your system's application menu. The interface allows you to easily add, modify, and delete rules.
 
 ## Step 3: Verifying Installation
 
@@ -41,6 +57,8 @@ You can verify that both ufw and gufw are installed by running the following com
 ## Step 4: Basic Firewall Configuration using gufw
 
 Now that we have ufw and gufw installed, let's configure some basic firewall rules using the graphical interface provided by gufw:
+
+Check the status:
 
 ![image](https://github.com/testcomputer/rando-linux-build/assets/104815254/2c07be71-acca-47bf-9900-143d5e1cb620)
 
@@ -74,12 +92,12 @@ csharp
 
 Click the "Apply" button to apply the rules.
 
+Whether you're a command-line enthusiast or a GUI lover, Linux offers a range of tools to help you configure and manage your firewall effectively. By understanding the basics and leveraging available packages, you can ensure that your Linux system remains secure and robust against potential threats.
+
 Your firewall is now configured with basic security settings. It allows HTTP and HTTPS traffic while denying SSH access from external sources.
 
 Remember that these are basic rules. Depending on your specific use case and services, you may need to adjust your firewall rules accordingly.
 
 That's it! You've installed 'ufw' and 'gufw', verified the installation, and set up basic security settings using the graphical interface provided by gufw.
 
-Remember that these are basic rules. Depending on your specific use case and services, you may need to adjust your firewall rules accordingly.
 
-That's it! You've installed 'ufw' and 'gufw', verified the installation, and set up basic security settings using the graphical interface provided by gufw.
