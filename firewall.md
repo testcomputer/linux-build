@@ -66,8 +66,8 @@ Your firewall is now configured with basic security settings. It allows HTTP and
 
 Remember that these are basic rules. Depending on your specific use case and services, you may need to adjust your firewall rules accordingly.
 
-That's it! You've installed ufw and gufw, verified the installation, and set up basic security settings using the graphical interface provided by gufw.
+That's it! You've installed 'ufw' and 'gufw', verified the installation, and set up basic security settings using the graphical interface provided by gufw.
 
 Remember that these are basic rules. Depending on your specific use case and services, you may need to adjust your firewall rules accordingly.
 
-That's it! You've installed ufw and gufw, verified the installation, and set up basic security settings using the graphical interface provided by gufw.
+That's it! You've installed 'ufw' and 'gufw', verified the installation, and set up basic security settings using the graphical interface provided by gufw.
