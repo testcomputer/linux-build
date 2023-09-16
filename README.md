@@ -5,9 +5,9 @@ Welcome to our high-performance Debian Linux server build tailored for web devel
 ## Features
 
 - **Operating System:** [Kali Linux](https://www.kali.org/)
-- **CPU:** [AMD Threadripper 24-core CPU](https://www.amd.com/en/products/ryzen-threadripper), a true marvel in the world of processing power that propels your server to new heights! 🚀
+- **CPU:** [AMD Threadripper 24-core CPU](https://www.amd.com/en/products/ryzen-threadripper)
 - **GPU:** [NVIDIA GeForce RTX 3070](https://www.nvidia.com/en-gb/geforce/graphics-cards/)
-- **RAM:** [128GB of DDR4 RAM](https://www.crucial.com/memory/ddr4) you're entering a realm where more is not just better.
+- **RAM:** [128GB of DDR4 RAM](https://www.crucial.com/memory/ddr4)
 - **Storage:** 
 
 
