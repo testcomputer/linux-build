@@ -65,6 +65,8 @@ Check the status:
 
 ![image](https://github.com/testcomputer/rando-linux-build/assets/104815254/2c07be71-acca-47bf-9900-143d5e1cb620)
 
+![image](https://github.com/testcomputer/linux-build/assets/104815254/f6ce9a1b-d790-4b36-aad8-99b90fbbdea9)
+
 Open gufw from your system's applications menu.
     Click the "Status" switch in the top-right corner to enable the firewall.
     Navigate to the "Rules" tab.
