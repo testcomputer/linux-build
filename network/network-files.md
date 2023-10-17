@@ -9,7 +9,6 @@ This repository provides an in-depth guide to various networking tools and comma
    - [ifconfig](#ifconfig)
    - [ip](#ip)
    - [ping](#ping)
-   ... [and so on for each tool]
 3. [Installation](#installation)
 4. [Contributing](#contributing)
 5. [License](#license)
