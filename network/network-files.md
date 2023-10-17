@@ -45,7 +45,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Determines the path taken by packets to reach a destination host.
     
-    Usage:
+ Usage:
 
 
     traceroute google.com
@@ -54,7 +54,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
    Description: Displays network statistics, routing tables, interface statistics, masquerade connections, and multicast memberships.
     
-    Usage:
+   Usage:
 
 
     netstat -tuln
@@ -63,7 +63,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: A more modern alternative to netstat for displaying socket statistics.
     
-    Usage:
+  Usage:
 
   
     ss -tuln
@@ -72,7 +72,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
    Description: A versatile networking utility for reading and writing data across network connections.
     
-    Usage:
+  Usage:
 
 
     nc -l -p 1234
@@ -81,7 +81,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: A DNS (Domain Name System) lookup tool for querying DNS servers.
     
-    Usage:
+  Usage:
 
 
     dig google.com
@@ -90,7 +90,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Another tool for querying DNS servers to look up IP addresses and domain information.
     
-    Usage:
+  Usage:
 
  
     nslookup google.com
@@ -99,7 +99,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Displays and manages ARP (Address Resolution Protocol) cache entries.
     
-    Usage:
+  Usage:
 
 
     arp -a
@@ -108,7 +108,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Manages the IP routing table.
     
-    Usage:
+   Usage:
 
 
     route -n
@@ -117,7 +117,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Configures wireless network interfaces.
     
-    Usage:
+   Usage:
 
 
 
@@ -127,7 +127,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
    Description: Provides information about network interface cards (NICs) and allows you to change their settings.
     
-    Usage:
+   Usage:
 
 
     ethtool eth0
@@ -136,7 +136,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Captures and analyzes network packets.
     
-    Usage:
+  Usage:
 
 
     tcpdump -i eth0
@@ -145,13 +145,13 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: A graphical network protocol analyzer for in-depth packet inspection.
     
-    Usage: Launch with wireshark and select the desired interface.
+  Usage: Launch with wireshark and select the desired interface.
 
 ### iftop
 
  Description: Displays bandwidth usage on an interface in real-time.
     
-    Usage:
+   Usage:
 
 
 
@@ -161,7 +161,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
    Description: A powerful network scanner for discovering open ports and services on remote hosts.
     
-    Usage:
+  Usage:
 
 
 
@@ -171,7 +171,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Secure Shell for remote access and secure file transfers.
     
-    Usage:
+  Usage:
 
 
     ssh user@hostname
@@ -180,7 +180,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Securely copy files between hosts over an SSH connection.
     
-    Usage:
+  Usage:
 
 
 
@@ -190,7 +190,7 @@ Networking is a fundamental aspect of IT and system administration. This guide a
 
  Description: Secure FTP for interactive file transfers over an SSH connection.
  
-    Usage:
+  Usage:
 
 
 
