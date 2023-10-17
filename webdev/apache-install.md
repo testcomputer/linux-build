@@ -68,6 +68,3 @@ Check the currently installed Apache version:
 That's it! You've successfully installed and updated Apache on a Debian-based Linux distribution.
 
 
-
-You can save the above content as a `.md` file and upload it to your GitHub repository or any platform that supports Markdown.
-
