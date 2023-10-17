@@ -36,37 +36,33 @@
 - Click on the terminal icon or press `Ctrl + Alt + T`.
 
 ### 2. **Update the Package List**
-```bash
-sudo apt update
 
-3. Upgrade the Installed Packages
+        sudo apt update
 
-bash
+### 3. Upgrade the Installed Packages
 
-sudo apt upgrade -y
 
-4. Optionally, Upgrade the Distribution
+        sudo apt upgrade -y
 
-bash
+### 4. Optionally, Upgrade the Distribution
 
-sudo apt dist-upgrade -y
 
-5. Clean Up
+        sudo apt dist-upgrade -y
 
-    After updating, it's a good practice to clean up any unnecessary files.
+### 5. Clean Up
 
-bash
+ After updating, it's a good practice to clean up any unnecessary files.
 
-sudo apt autoremove -y
+
+        sudo apt autoremove -y
 
 Checking the Kali Linux Edition
 1. Open the Terminal
 
-    Click on the terminal icon or press Ctrl + Alt + T.
+ Click on the terminal icon or press Ctrl + Alt + T.
 
 2. Check the Kali Linux Version
 
-bash
 
 cat /etc/os-release
 
