@@ -15,7 +15,6 @@ sudo subscription-manager repos --list
 
 Once you've identified the repository you want to enable:
 
-bash
 
 sudo subscription-manager repos --enable=<repository_id>
 
@@ -24,7 +23,6 @@ Replace <repository_id> with the ID of the repository you want to enable.
 
 To disable a specific repository:
 
-bash
 
 sudo subscription-manager repos --disable=<repository_id>
 
@@ -32,15 +30,13 @@ sudo subscription-manager repos --disable=<repository_id>
 
 To view the repositories that are currently enabled:
 
-bash
+
 
 sudo subscription-manager repos --list-enabled
 
 5. Using YUM
 
 You can also use the yum command (or dnf in newer versions of Red Hat) to see the repositories:
-
-bash
 
 yum repolist
 
@@ -51,7 +47,6 @@ If a repository isn't available through the subscription manager, you can add it
     Create a .repo file in /etc/yum.repos.d/.
     Add the following:
 
-bash
 
 [repository_id]
 name=Repository Name
