@@ -16,65 +16,63 @@ This guide provides a step-by-step walkthrough on setting up NVIDIA on Kali Linu
 
 Ensure that the necessary repositories are added to your sources list:
 
-\```bash
+```bash
 grep "contrib non-free" /etc/apt/sources.list
-\```
+```
 
 The output should resemble:
 
-\```
-deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
-\```
+    
+    deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+
 
 ## Updating System Repositories
 
 To ensure you have the latest packages and dependencies, update your system:
 
-\```bash
-sudo apt update    
-sudo apt -y full-upgrade -y
-sudo reboot
-\```
+
+    sudo apt update    
+    sudo apt -y full-upgrade -y
+    sudo reboot
+    
 
 ## Verifying Packages
 
 After rebooting, verify that the packages are correctly set up:
+    
+    nano http://kali.org/kali kali-rolling main contrib non-free free-firmware
 
-\```bash
-nano http://kali.org/kali kali-rolling main contrib non-free free-firmware
-\```
 
 Check your VGA compatible controller:
 
-\```bash
-lspci | grep -i vga
-\```
+    
+    lspci | grep -i vga
+
 
 The output should be similar to:
+    
+    42:00.0 VGA compatible controller: NVIDIA Corporation GA104 [GeForce RTX 3070] (rev a1)
 
-\```
-42:00.0 VGA compatible controller: NVIDIA Corporation GA104 [GeForce RTX 3070] (rev a1)
-\```
 
 Take note of the unique PCI bus address from the `lspci` command. You'll need this for further verification:
 
-\```bash
-lspci -s 42:00.0 -v
-\```
+
+    lspci -s 42:00.0 -v
+
 
 ## Detecting NVIDIA Card
 
 For the system to recognize the NVIDIA card, you may need to install additional software:
 
-\```bash
+```bash
 sudo apt install -y nvidia-detect
-\```
+```
 
 Run the `nvidia-detect` command:
 
-\```bash
+```bash
 nvidia-detect
-\```
+```
 
 The output should provide details about the detected NVIDIA GPUs.
 
@@ -82,9 +80,9 @@ The output should provide details about the detected NVIDIA GPUs.
 
 To ensure that the NVIDIA drivers are correctly installed and functioning:
 
-\```bash
+```bash
 nvidia-smi
-\```
+```
 
 This command provides a detailed overview of the NVIDIA GPU's status, including temperature, memory usage, and more.
 
@@ -92,18 +90,18 @@ This command provides a detailed overview of the NVIDIA GPU's status, including 
 
 For further testing and to verify the GPU's capabilities, you can use tools like `hashcat`:
 
-\```bash
+```bash
 hashcat -I
-\```
+```
 
 This command provides details about the CUDA and OpenCL capabilities of the GPU.
 
 Additionally, you can install and use `clinfo` to get more details about OpenCL platforms and devices:
 
-\```bash
+```bash
 sudo apt install -y clinfo    
 clinfo
-\```
+```
 
 ---
 
