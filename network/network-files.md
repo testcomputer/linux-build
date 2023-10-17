@@ -40,7 +40,163 @@ Networking is a fundamental aspect of IT and system administration. This guide a
   ip route show
   ```
 
-... [Continue in this format for each tool]
+
+### traceroute
+
+ Description: Determines the path taken by packets to reach a destination host.
+    
+    Usage:
+
+
+    traceroute google.com
+
+### netstat
+
+   Description: Displays network statistics, routing tables, interface statistics, masquerade connections, and multicast memberships.
+    
+    Usage:
+
+
+    netstat -tuln
+
+### ss
+
+ Description: A more modern alternative to netstat for displaying socket statistics.
+    
+    Usage:
+
+  
+    ss -tuln
+
+### nc (netcat)
+
+   Description: A versatile networking utility for reading and writing data across network connections.
+    
+    Usage:
+
+
+    nc -l -p 1234
+
+### dig
+
+ Description: A DNS (Domain Name System) lookup tool for querying DNS servers.
+    
+    Usage:
+
+
+    dig google.com
+
+### nslookup
+
+ Description: Another tool for querying DNS servers to look up IP addresses and domain information.
+    
+    Usage:
+
+ 
+    nslookup google.com
+
+### arp
+
+ Description: Displays and manages ARP (Address Resolution Protocol) cache entries.
+    
+    Usage:
+
+
+    arp -a
+
+### route
+
+ Description: Manages the IP routing table.
+    
+    Usage:
+
+
+    route -n
+
+### iwconfig
+
+ Description: Configures wireless network interfaces.
+    
+    Usage:
+
+
+
+    iwconfig wlan0
+
+### ethtool
+
+   Description: Provides information about network interface cards (NICs) and allows you to change their settings.
+    
+    Usage:
+
+
+    ethtool eth0
+
+### tcpdump
+
+ Description: Captures and analyzes network packets.
+    
+    Usage:
+
+
+    tcpdump -i eth0
+
+### wireshark
+
+ Description: A graphical network protocol analyzer for in-depth packet inspection.
+    
+    Usage: Launch with wireshark and select the desired interface.
+
+### iftop
+
+ Description: Displays bandwidth usage on an interface in real-time.
+    
+    Usage:
+
+
+
+    iftop -i eth0
+
+### nmap
+
+   Description: A powerful network scanner for discovering open ports and services on remote hosts.
+    
+    Usage:
+
+
+
+    nmap -p 1-1000 target_ip
+
+### ssh
+
+ Description: Secure Shell for remote access and secure file transfers.
+    
+    Usage:
+
+
+    ssh user@hostname
+
+### scp
+
+ Description: Securely copy files between hosts over an SSH connection.
+    
+    Usage:
+
+
+
+    scp file.txt user@hostname:/path/to/destination
+
+### sftp
+
+ Description: Secure FTP for interactive file transfers over an SSH connection.
+ 
+    Usage:
+
+
+
+      sftp user@hostname
+
+
 
 ## Installation
 To utilize this guide, no specific installation is required. However, to use the tools mentioned, you might need to install them based on your operating system. For Debian-based systems, you can use:
