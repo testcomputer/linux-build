@@ -71,7 +71,7 @@ Allow incoming DNS traffic on port 53 (both TCP and UDP):
 
 ## Allowing MySQL (Port 3306)
 
-# Allow incoming MySQL traffic on port 3306:
+ Allow incoming MySQL traffic on port 3306:
 
 
     
@@ -79,7 +79,7 @@ Allow incoming DNS traffic on port 53 (both TCP and UDP):
 
 ## Allowing PostgreSQL (Port 5432)
 
-# Allow incoming PostgreSQL traffic on port 5432:
+ Allow incoming PostgreSQL traffic on port 5432:
 
 
 
