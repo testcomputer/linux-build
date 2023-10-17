@@ -1,3 +1,9 @@
+<!-- ![version](https://img.shields.io/badge/Version-1.0.1-brightgreen) -->
+![Language](https://img.shields.io/badge/Built%20with-bash-brightgreen.svg)
+![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![TestedOn](https://img.shields.io/badge/tested%20on-Kali%20Linux-red.svg)
+
+
 # Debian Linux Server Build for Web Development and Network Security
 
 ![image](https://github.com/testcomputer/linux-build/assets/104815254/a7ae6c43-3674-412d-a457-d823200a3556)
