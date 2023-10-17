@@ -5,3 +5,6 @@ On CentOS 7:
     
     sudo yum install epel-release
     sudo yum groupinstall "Xfce"
+    sudo yum update -y
+    sudo upgrade -y
+    
