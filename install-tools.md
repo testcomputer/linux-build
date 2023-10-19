@@ -18,6 +18,7 @@ Once you've identified the repository you want to enable:
         sudo subscription-manager repos --enable=<repository_id>
 
 Replace <repository_id> with the ID of the repository you want to enable.
+
 3. Disable a Repository
 
 To disable a specific repository:
