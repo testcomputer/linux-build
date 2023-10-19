@@ -4,7 +4,7 @@
 ![TestedOn](https://img.shields.io/badge/tested%20on-Kali%20Linux-red.svg)
 
 
-# Debian Server Build for Web Development & SIEM setup
+# Debian Server Build for Web/Game Development, Network Security, & Programming.
 
 ![image](https://github.com/testcomputer/linux-build/assets/104815254/a7ae6c43-3674-412d-a457-d823200a3556)
 
