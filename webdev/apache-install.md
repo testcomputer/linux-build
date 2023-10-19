@@ -1,4 +1,4 @@
-# Installing and Updating Apache on Debian-based Linux Distributions
+# Installing & Updating Apache on Debian Server
 
 This guide will walk you through the process of installing and updating the Apache web server on Debian-based Linux distributions, such as Debian itself or Ubuntu.
 
