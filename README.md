@@ -99,8 +99,5 @@ With the unparalleled performance and robust capabilities of our Debian Linux se
 
 Your insights and expertise can elevate this project to new heights. Whether it's identifying areas of improvement, suggesting innovative features, or contributing directly through code, your collaboration is invaluable. Open issues, submit pull requests, or simply share your feedback - every contribution enriches our community.
 
-**License**
-
-This project proudly operates under the MIT License, promoting open-source collaboration and innovation.
 
 Here's to pushing boundaries in coding and security! 🚀🔒
