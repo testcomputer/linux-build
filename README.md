@@ -32,22 +32,6 @@ Our Debian Linux server isn’t just built for performance; it’s built for *ex
 
 <!-- ![Hardware Performance Comparison Chart] -->
 
-**Performance Comparison**:
-
-The bar chart above illustrates the performance leap our server setup provides over a standard setup. Whether it’s the compile times or the speed of running network security assessments, the difference is clear and substantial. 
-
-**Examples**:
-
-- **Web Development**: The high-core count of the AMD Threadripper CPU significantly reduces the time it takes to compile large codebases. For instance, compiling the Linux Kernel, a task known for its lengthy compile time, is drastically shortened. On a standard 12-core CPU setup, it might take around 40 minutes, while on our 24-core setup, it's down to approximately 22 minutes.
-
-- **Network Security**: The NVIDIA GeForce RTX 3070 GPU shines in cryptographic tasks. For example, password cracking tasks that would traditionally take days on standard setups can now be accomplished in mere hours.
-
-
-
-
-
-
-
 
 **Purpose**
 
