@@ -4,7 +4,7 @@ System Updates:
 
     Regularly update your system to get the latest security patches.
 
-    bash
+
 
     sudo yum update
 
@@ -12,7 +12,7 @@ Configure Firewalld:
 
     Enable and start firewalld:
 
-    bash
+
 
     sudo systemctl enable firewalld
     sudo systemctl start firewalld
@@ -21,7 +21,7 @@ SELinux:
 
     Ensure SELinux is enabled and enforcing:
 
-    bash
+
 
     sudo setenforce 1
     sudo sed -i 's/SELINUX=permissive/SELINUX=enforcing/' /etc/selinux/config
@@ -34,7 +34,6 @@ Secure SSH:
         Change the default SSH port if necessary.
     Restart the SSH service after changes:
 
-    bash
 
 sudo systemctl restart sshd
 
@@ -43,7 +42,6 @@ Audit System Activities:
 
     Use auditd to monitor system activities:
 
-    bash
 
     sudo yum install audit
     sudo systemctl enable auditd
@@ -54,7 +52,7 @@ EPEL:
 
     Extra Packages for Enterprise Linux (EPEL) provides additional packages:
 
-    bash
+
 
 sudo yum install epel-release
 
@@ -64,7 +62,6 @@ ClamAV:
 
     Install ClamAV antivirus:
 
-    bash
 
     sudo yum install clamav clamav-update
 
@@ -72,7 +69,7 @@ Lynis:
 
     A security auditing tool:
 
-    bash
+ 
 
     sudo yum install lynis
 
@@ -80,7 +77,7 @@ Rkhunter:
 
     A rootkit checker:
 
-    bash
+
 
     sudo yum install rkhunter
 
@@ -88,7 +85,6 @@ Chkrootkit:
 
     Another tool to check for rootkits:
 
-    bash
 
     sudo yum install chkrootkit
 
@@ -96,7 +92,6 @@ AIDE (Advanced Intrusion Detection Environment):
 
     File and directory integrity checker:
 
-    bash
 
 sudo yum install aide
 sudo aide --init
@@ -109,8 +104,6 @@ RPM Fusion:
     Benefits: Access software not included in the main distribution due to reasons other than quality or maintenance.
     Installation:
 
-    bash
-
 sudo yum install --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
 
 
@@ -121,8 +114,6 @@ EPEL (Extra Packages for Enterprise Linux):
     Benefits: EPEL packages are usually based on their Fedora counterparts and will never conflict with or replace packages in the base Enterprise Linux distributions. They're highly useful when you need software that's not available in the core repositories.
     Installation:
 
-    bash
-
     sudo yum install epel-release
 
 Remi:
@@ -131,7 +122,7 @@ Remi:
     Benefits: If you need more recent versions of PHP and related software than what CentOS provides by default, Remi is an excellent choice.
     Installation:
 
-    bash
+
 
 sudo yum install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
@@ -142,7 +133,7 @@ ELRepo:
     Benefits: If you're looking to get the latest hardware drivers or have specific hardware that's not supported by default, ELRepo can be a lifesaver.
     Installation:
 
-    bash
+
 
 sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo yum install https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
@@ -154,7 +145,6 @@ IUS (Inline with Upstream Stable):
     Benefits: Get the latest software, like Python, MariaDB, or PHP, without waiting for the official repositories to catch up.
     Installation:
 
-    bash
 
 sudo yum install https://repo.ius.io/ius-release-el7.rpm
 sudo yum install epel-release
@@ -166,7 +156,6 @@ City Fan:
     Benefits: Access to newer networking tools than what's available in the core repositories.
     Installation:
 
-    bash
 
 sudo yum install http://www.city-fan.org/ftp/contrib/yum-repo/city-fan.org-release-2-1.rhel7.noarch.rpm
 
@@ -179,7 +168,6 @@ Tighten Firewalld Rules:
 
     Only allow necessary ports and services.
 
-    bash
 
 sudo firewall-cmd --list-all
 sudo firewall-cmd --permanent --add-service=http
@@ -192,7 +180,6 @@ Disable Unused Services and Protocols:
 
     Ensure that only necessary services are running on your system. Use systemctl list-units --type=service to see active services and disable those you don't need.
 
-    bash
 
     sudo systemctl disable [service-name]
 
@@ -205,7 +192,6 @@ Tighten Firewalld Rules:
 
     Only allow necessary ports and services.
 
-    bash
 
     sudo firewall-cmd --list-all
     sudo firewall-cmd --permanent --add-service=http
@@ -221,15 +207,12 @@ Configure AIDE:
 
     After the initial setup of AIDE (as mentioned previously), regularly run checks to ensure file integrity.
 
-    bash
 
     sudo aide --check
 
 Log Monitoring:
 
     Use tools like Logwatch to get daily reports from log files.
-
-    bash
 
     sudo yum install logwatch
 
@@ -242,7 +225,7 @@ Regularly Review User Accounts:
 
     Periodically check all user accounts and ensure no unauthorized accounts exist.
 
-    bash
+  
 
     cat /etc/passwd
 
@@ -255,7 +238,7 @@ System Auditing with auditd:
 
     Use auditd to set up rules for monitoring system events.
 
-    bash
+
 
     sudo auditctl -w /etc/passwd -p wa
 
@@ -263,7 +246,6 @@ Monitor User Activity with psacct or acct:
 
     These tools will let you monitor all commands executed by a user.
 
-    bash
 
     sudo yum install psacct
     sudo systemctl start psacct
@@ -272,7 +254,7 @@ Monitor User Activity with psacct or acct:
 
     Edit the /etc/fstab file and add the following line to secure shared memory:
 
-    arduino
+
 
     tmpfs     /run/shm     tmpfs     defaults,noexec,nosuid     0 0
 
@@ -280,7 +262,7 @@ Monitor User Activity with psacct or acct:
 
     Ensure only authorized users can run cron jobs.
 
-    bash
+
 
     sudo chmod 700 /etc/crontab
 
