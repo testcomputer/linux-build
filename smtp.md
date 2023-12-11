@@ -4,21 +4,21 @@ Simple Mail Transfer Protocol (SMTP) is crucial for sending and receiving emails
 
 In this tutorial, we'll focus on deactivating SMTP for the most commonly used MTAs: Postfix and Sendmail.
 
-## Disabling SMTP for **Postfix**:
+### Disabling SMTP for **Postfix**:
 
 If Postfix is your MTA of choice, utilize the following commands:
 
-```bash
-sudo systemctl stop postfix
-sudo systemctl disable postfix
+    
+    sudo systemctl stop postfix
+    sudo systemctl disable postfix
 
-Disabling SMTP for Sendmail:
+### Disabling SMTP for Sendmail:
 
-For Sendmail users, execute these commands:
+### For Sendmail users, execute these commands:
 
 
-sudo systemctl stop sendmail
-sudo systemctl disable sendmail
+    sudo systemctl stop sendmail
+    sudo systemctl disable sendmail
 
 Upon completion, the associated SMTP service will be deactivated and won't initiate during system boot.
 Identifying Your MTA:
@@ -27,7 +27,7 @@ If you're unsure about your MTA or if you're operating a different one, determin
 
 
 
-sudo netstat -tuln | grep :25
+    sudo netstat -tuln | grep :25
 
 The output will pinpoint the service utilizing port 25. With this knowledge, you can employ the systemctl commands mentioned earlier, ensuring you replace postfix or sendmail with your specific MTA's name.
 Fortifying Against SMTP Traffic:
@@ -35,11 +35,11 @@ Fortifying Against SMTP Traffic:
 To enhance security, you might consider barring all SMTP traffic via a firewall rule. If firewalld is your firewall solution, input the following:
 
 
-sudo firewall-cmd --permanent --add-port=25/tcp --zone=block
-sudo firewall-cmd --reload
+    sudo firewall-cmd --permanent --add-port=25/tcp --zone=block
+    sudo firewall-cmd --reload
 
 Note:
 
-Before you make these changes, particularly on a live server, ensure you grasp the full ramifications. Deactivating SMTP means your server won't send or receive emails, which could disrupt intended communications.
+## Before you make these changes, particularly on a live server, ensure you grasp the full ramifications. Deactivating SMTP means your server won't send or receive emails, which could disrupt intended communications.
 
 Stay vigilant and always prioritize your system's security!
