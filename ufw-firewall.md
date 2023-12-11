@@ -106,3 +106,23 @@ Remember that these are basic rules. Depending on your specific use case and ser
 That's it! You've installed 'ufw' and 'gufw', verified the installation, and set up basic security settings using the graphical interface provided by gufw.
 
 
+
+In conclusion, configuring your firewall with ufw and its graphical interface gufw is a straightforward process that significantly enhances the security of your Linux system. By following the steps outlined in this tutorial, you've successfully tailored your firewall settings to your needs.
+
+You've learned how to disable SSH access from external sources, a crucial step if SSH is not required, thus reducing the potential attack surface of your system. This was achieved simply by selecting "SSH" from the preconfigured options in gufw and setting the action to "Deny".
+
+Additionally, you've ensured that your server remains accessible for web traffic by allowing both HTTP and HTTPS. This is essential for hosting websites or web applications. Again, this was easily done using gufw by selecting "WWW (HTTP)" and "WWW (HTTPS)" from the preconfigured options and allowing traffic on these ports.
+
+Your final ruleset should look like this:
+
+    Allow WWW (HTTP) from Anywhere
+    Allow WWW (HTTPS) from Anywhere
+    Deny SSH from Anywhere
+
+After applying these settings, your firewall is now equipped with basic yet essential security configurations. It's tailored to permit web traffic while safeguarding against unauthorized SSH access.
+
+It's important to remember that these configurations are foundational. Depending on the specific requirements of your server or network, further customization of your firewall rules may be necessary. Regularly reviewing and updating these rules is a best practice to ensure ongoing security and functionality.
+
+By completing this tutorial, you've taken a significant step in securing your Linux system using ufw and gufw. This demonstrates the flexibility and power of Linux systems in providing both command-line and graphical tools for effective system management and security.
+
+
